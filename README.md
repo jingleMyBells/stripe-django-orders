@@ -43,7 +43,10 @@ sudo docker-compose -f docker-compose-alt.yml up
 - [GET: item/{item_id}](http://localhost/item/1/)
 - [GET: order/{order_id}](http://localhost/order/1/)
 
-
+## Проект развернут по адресу:
+```http
+  http://94.198.217.113
+```
 
 #### Стэк
 Python3.11.2, Django REST Framework, Stripe, Nginx, Docker, Postgres
@@ -63,3 +66,5 @@ Python3.11.2, Django REST Framework, Stripe, Nginx, Docker, Postgres
 ```bash
 sudo docker-compose -f docker-compose-alt.yml up
 ```
+
+
