@@ -33,6 +33,10 @@ cat env-example.txt > .env
 ```bash
 sudo docker-compose up
 ```
+либо
+```bash
+sudo docker-compose -f docker-compose-alt.yml up
+```
 
 ## API Endpoints:
 - [GET: buy/{item_id}](http://localhost/buy/1/)
@@ -55,4 +59,7 @@ Python3.11.2, Django REST Framework, Stripe, Nginx, Docker, Postgres
 - бонусная задача про валюту: реализовал выбор валюты, для конкретных товаров должно работать. в случае order задача требует уточнений ТЗ:)
 - на Payment Intent, к великому сожалению, не хватило времени
 - цены на товары сознательно с плавающей точкой для юзера в админке, тк Stripe живет "в центах"
-- прототип ждет хелсчек БД, поэтому стартует с небольшой паузой (5 с.). иногда это продуцирует проблему.
+- прототип ждет хелсчек БД, поэтому стартует с небольшой паузой (5 с.). иногда это продуцирует проблему. альтернативный запуск:
+```bash
+sudo docker-compose -f docker-compose-alt.yml up
+```
