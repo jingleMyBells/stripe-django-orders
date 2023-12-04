@@ -16,7 +16,7 @@
 
 Склонировать репозиторий
 ```bash
-git clone git@github.com:jingleMyBells/stripe-django-orders.git
+git clone https://github.com/jingleMyBells/stripe-django-orders.git
 ```
 
 Перейти в каталог с проектом и конфигурационным файлом развертки
@@ -26,12 +26,12 @@ cd stripe-django-orders/deploy
 
 Создать .env файл
 ```bash
-cat env_example.txt > .env
+cat env-example.txt > .env
 ```
 
 Запустить проект
 ```bash
-  docker-compose up
+sudo docker-compose up
 ```
 
 ## API Endpoints:
@@ -55,4 +55,4 @@ Python3.11.2, Django REST Framework, Stripe, Nginx, Docker, Postgres
 - бонусная задача про валюту: реализовал выбор валюты, для конкретных товаров должно работать. в случае order задача требует уточнений ТЗ:)
 - на Payment Intent, к великому сожалению, не хватило времени
 - цены на товары сознательно с плавающей точкой для юзера в админке, тк Stripe живет "в центах"
-- прототип ждет хелсчек БД, поэтому стартует с небольшой паузой (5 с.)
+- прототип ждет хелсчек БД, поэтому стартует с небольшой паузой (5 с.). иногда это продуцирует проблему.
