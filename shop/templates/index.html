@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Все товары{% endblock %}
+{% block content %}
+
+<main>
+  <div class="container py-5" style="padding-top: 0rem!important">
+    <hr style="color: white;">
+      {% if item %}
+        {% include 'includes/card.html' %}
+      {% else %}
+      <p>Итем не найден</p>
+      {% endif %}
+  </div>
+</main>
+{% endblock %}

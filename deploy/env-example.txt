@@ -1,0 +1,11 @@
+D_KEY=supersecret
+DEBUG_MODE=True
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+DB_HOST=db
+DB_PORT=5432
+PK_TEST=pk_test_51OIIjjAzR9kmDn8fK2XAbm5h0lClAVoa7hHJ2hB7SV6U2cpmWbFlijCNK68ccTx8B4mdBtpsY1OTHOVyu5VWtHrI00cGyFqqVo
+SK_TEST=sk_test_51OIIjjAzR9kmDn8fl6oOzJabA6v1oF9oncZ3EvnumL0oCSxTFAMnaDkzLZIL6P7Dy5Fn8167QdCjcCSlUFUKpJhe003V2Eboc4
+SUCCESS_URL=https://example.com/success
